@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenze</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body id="reviews-page">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Filmová databáze" /></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
+                <li><a href="doporuceni.html">Doporučení</a></li>
+                <li><a href="recenze.html">Recenze</a></li>
+                <li><a href="o_nas.html">O nás</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reviews">
+            <h2>Vaše recenze</h2>
+            <form id="review-form">
+                <label for="movie">Film:</label>
+                <input type="text" id="movie" name="movie" placeholder="Zadejte název filmu" required>
+
+                <label for="rating">Hodnocení:</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1 hvězdička</option>
+                    <option value="2">2 hvězdičky</option>
+                    <option value="3">3 hvězdičky</option>
+                    <option value="4">4 hvězdičky</option>
+                    <option value="5">5 hvězdiček</option>
+                </select>
+
+                <label for="review">Recenze:</label>
+                <textarea id="review" name="review" rows="4" placeholder="Napište recenzi..." required></textarea>
+
+                <button type="submit">Odeslat</button>
+            </form>
+
+            <div id="review-list">
+                <p id="no-reviews-text">Zatím nejsou žádné recenze.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Filmová databáze. Adéla Chaloupková.</p>
+    </footer>
+</body>
+</html>

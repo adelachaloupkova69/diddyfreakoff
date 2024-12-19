@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body id="watchlist-page">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Filmová databáze" /></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
+                <li><a href="doporuceni.html">Doporučení</a></li>
+                <li><a href="recenze.html">Recenze</a></li>
+                <li><a href="o_nas.html">O nás</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="watchlist">
+            <h2>Váš Watchlist</h2>
+            <p>Zde se budou zobrazovat filmy, které si uložíte pro pozdější zhlédnutí.</p>
+            <div id="watchlist-items" class="movie-grid">
+                <p>Nemáte žádné uložené filmy.</p>
+            </div>
+            <button id="clear-watchlist" class="btn">Odebrat vše</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Filmová databáze. Adéla Chaloupková.</p>
+    </footer>
+</body>
+</html>
+

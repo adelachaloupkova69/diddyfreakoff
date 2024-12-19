@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doporučení</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body id="recommendations-page">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Filmová databáze" /></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
+                <li><a href="doporuceni.html">Doporučení</a></li>
+                <li><a href="recenze.html">Recenze</a></li>
+                <li><a href="o_nas.html">O nás</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recommendations">
+            <h2>Doporučené filmy</h2>
+            <form id="filter-form">
+                <label for="genre">Žánr:</label>
+                <select id="genre" name="genre">
+                </select>
+
+                <label for="actor">Herec:</label>
+                <input type="text" id="actor" name="actor" placeholder="Zadejte jméno herce">
+
+                <button type="submit">Vyhledat</button>
+            </form>
+
+            <div id="recommendation-results" class="movie-grid">
+                <p>Vyplňte formulář a zobrazí se doporučené filmy.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Filmová databáze. Adéla Chaloupková.</p>
+    </footer>
+</body>
+</html>
