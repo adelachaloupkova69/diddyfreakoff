@@ -1,4 +1,4 @@
-/* Základní styly pro tmavé téma */
+
 body {
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
@@ -76,7 +76,6 @@ header {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Mobilní menu */
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: flex;
@@ -105,7 +104,6 @@ header {
     }
 }
 
-/* Úvodní stránka */
 .intro {
     display: flex;
     justify-content: center;
@@ -157,7 +155,6 @@ header {
     transform: translateY(-3px);
 }
 
-/* Sekce na dalších stránkách */
 section {
     padding: 50px 20px;
     margin: 20px auto;
@@ -184,7 +181,6 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Formuláře */
 form {
     display: flex;
     flex-direction: column;
@@ -236,7 +232,6 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Doporučení filmů */
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

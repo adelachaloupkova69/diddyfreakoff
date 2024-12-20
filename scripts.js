@@ -1,5 +1,4 @@
-// Mobile menu toggle
-// Ensure the navigation toggle functionality works reliably
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('mobile-menu');
     const navList = document.querySelector('.nav-list');
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
             menuToggle.classList.toggle('open');
         });
 
-        // Close mobile menu on link click
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navList.classList.remove('active');
@@ -23,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Dynamic watchlist functionality
 const saveToWatchlist = (movieTitle) => {
     const savedMovies = JSON.parse(localStorage.getItem('watchlist')) || [];
     if (!savedMovies.includes(movieTitle)) {
@@ -73,7 +70,6 @@ const loadWatchlist = async () => {
             }
         }
 
-        // Přidáme event listener na tlačítka Odebrat
         watchlist.addEventListener('click', (e) => {
             if (e.target.classList.contains('remove-from-watchlist')) {
                 const movieTitle = e.target.dataset.title;
@@ -106,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 saveToWatchlist(movieTitle);
                 alert(`${movieTitle} byl přidán do watchlistu!`);
 
-                // Refresh watchlist on the watchlist page
                 if (document.body.id === 'watchlist-page') {
                     loadWatchlist();
                 }
@@ -115,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Fetch and populate genres from TMDb API
 document.addEventListener('DOMContentLoaded', async () => {
     const genreSelect = document.getElementById('genre');
     const TMDB_API_KEY = 'f3eb28da740fec4387f1b941d0754601';
@@ -137,7 +131,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-// Form handling for recommendations with TMDb API
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('filter-form');
     const results = document.getElementById('recommendation-results');
@@ -196,7 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Review submission with star rating
 document.addEventListener('DOMContentLoaded', () => {
     const reviewForm = document.getElementById('review-form');
     const reviewList = document.getElementById('review-list');
@@ -226,8 +218,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Smooth scrolling for navigation
-// Ensure smooth scrolling is only applied to internal links
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-list a');
 
@@ -248,7 +238,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Dark/Light mode toggle
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.createElement('button');
     toggleButton.textContent = 'Přepnout téma';
